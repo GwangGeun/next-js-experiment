@@ -12,14 +12,14 @@ export const FetchPage = () => {
 
     const handle = (e: any) => {
         // console.log(e)
-        revalidateTest()
+        // revalidateTest()
         // revalidateTag("test-tag")
     }
 
     return (
         <div>
+
             fetchPage
-            <Button2 onClick={handle}/>
         </div>
     );
 }

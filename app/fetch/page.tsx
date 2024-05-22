@@ -1,4 +1,5 @@
 import {FetchPage} from "@/app/client/fetch";
+import Transition from "@/app/client/Transition";
 
 export default async function Fetch() {
 
@@ -15,7 +16,6 @@ export default async function Fetch() {
 
     return (
         <main>
-            hi fetch
             <FetchPage/>
         </main>
     );
