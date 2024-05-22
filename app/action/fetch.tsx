@@ -17,3 +17,15 @@ export const revalidateTest = async () => {
     console.log("POST : " + res.status)
     revalidateTag("test-tag")
 }
+
+export const deleteMethodTestOnServerAction = async () => {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/users/2`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        },
+    );
+    console.log("DELETE : " + res.status)
+    revalidateTag("test-tag")
+}

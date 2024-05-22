@@ -7,7 +7,7 @@ export const Button = () => {
 
 
 interface ButtonProps {
-    onClick: (e:any) => void;
+    onClick: () => void;
 }
 
 export const Button2: React.FC<ButtonProps> = ({ onClick }) => {

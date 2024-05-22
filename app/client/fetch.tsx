@@ -1,7 +1,7 @@
 'use client'
 
 import {Button2} from "@/app/client/button";
-import {revalidateTest} from "@/app/action/fetch";
+import {deleteMethodTestOnServerAction, revalidateTest} from "@/app/action/fetch";
 import {useEffect} from "react";
 
 export const FetchPage = () => {
@@ -10,15 +10,16 @@ export const FetchPage = () => {
         console.log("[useEffect] FetchPage")
     }, []);
 
-    const handle = (e: any) => {
-        // console.log(e)
-        // revalidateTest()
-        // revalidateTag("test-tag")
-    }
+
+    // const handle = (e: any) => {
+    //     // console.log(e)
+    //     // revalidateTest()
+    //     // revalidateTag("test-tag")
+    // }
 
     return (
         <div>
-
+            <Button2 onClick={() => {deleteMethodTestOnServerAction().then(r => console.log(r))}}/>
             fetchPage
         </div>
     );
