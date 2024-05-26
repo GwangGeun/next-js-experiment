@@ -19,7 +19,7 @@ export const revalidateTest = async () => {
 }
 
 export const deleteMethodTestOnServerAction = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/users/2`, {
+    const res = await fetch(`${process.env.BACKEND_BASE_URL}/api/users/2`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

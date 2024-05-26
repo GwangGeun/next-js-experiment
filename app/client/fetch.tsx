@@ -19,7 +19,7 @@ export const FetchPage = () => {
 
     return (
         <div>
-            <Button2 onClick={() => {deleteMethodTestOnServerAction().then(r => console.log(r))}}/>
+            <Button2 onClick={() => {revalidateTest().then(r => console.log(r))}}/>
             fetchPage
         </div>
     );
